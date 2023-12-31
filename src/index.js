@@ -36,6 +36,7 @@ app.use(
   })
 );
 app.use("/", require("./routes/index"));
+app.use("/auth", require("./routes/auth"));
 
 // Configure express-handlebars
 const hbs = exphbs.create({ defaultLayout: "main", extname: ".hbs" });
